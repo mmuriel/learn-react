@@ -1,0 +1,25 @@
+{
+  "name": "learn-react",
+  "version": "1.0.0",
+  "description": "Proyecto de aprendizaje de la libreria ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mmuriel/learn-react.git"
+  },
+  "keywords": [
+    "ReactJS",
+    "Sientifica",
+    "Javascript",
+    "ES2015"
+  ],
+  "author": "@maomuriel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmuriel/learn-react/issues"
+  },
+  "homepage": "https://github.com/mmuriel/learn-react#readme"
+}
