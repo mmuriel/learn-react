@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React</title>
+    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <div id="mmele1"></div>
+    <div id="mmele2"></div>
+    <div id="mmele3"></div>
+    <script type="text/babel">
+
+
+      var MmClass = React.createClass({
+
+        render:function(){
+
+          console.log("Esta función es llamada cuando se invoca ReactDOM.render");
+          return (<div className="divbymm" id="mm01">Creando una clase para replicar luego el componente</div>);
+
+        }
+
+      })
+
+      var ranText = "Esto es un texto random, dentro de la especificacion ES2015";
+      var pasicDomEle = <p className="pclass" htmlFor="forclass">Este es otro hola mundo: <span id="insider"></span></p>; //It is valid if it is took as JSX sintax
+
+      var BasicDomEle = React.createElement('div',{id:2015,className:'mm',htmlFor:'mmfor'},`Hola mundo ${ranText}`);
+
+      
+      ReactDOM.render(pasicDomEle,document.getElementById("example"));
+      ReactDOM.render(BasicDomEle,document.getElementById("insider"));
+      ReactDOM.render(<MmClass>Mas contenido</MmClass>,document.getElementById("mmele1"));
+      ReactDOM.render(<MmClass>Mas contenido</MmClass>,document.getElementById("mmele2"));
+      ReactDOM.render(<MmClass>Mas contenido</MmClass>,document.getElementById("mmele3"));
+
+      //setInterval(tick, 500);
+
+
+
+    </script>
+  </body>
+</html>
